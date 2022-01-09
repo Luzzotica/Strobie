@@ -20,6 +20,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        /*if(segue.identifier == "MenuToSetup")
+        {
+            
+        }
+        else if(segue.identifier == "MenuToJoin")
+        {
+            
+        }*/
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    
 }
 

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NetworkPlayer" customModule="Strobe" customModuleProvider="target">
+            <connections>
+                <outlet property="light" destination="BhG-GL-e4d" id="VU2-wW-t3p"/>
+                <outlet property="playerName" destination="k1N-qo-9mW" id="u2b-oz-XHb"/>
+                <outlet property="sendData" destination="MY7-66-BvF" id="nxx-5f-0R1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MY7-66-BvF">
+                    <rect key="frame" x="0.0" y="109" width="600" height="491"/>
+                    <state key="normal" title="Button" image="NArrow P1">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sendToPlayer:" destination="-1" eventType="touchUpInside" id="S5x-7h-aVE"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vGz-jn-2ul"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LightOff" translatesAutoresizingMaskIntoConstraints="NO" id="BhG-GL-e4d">
+                    <rect key="frame" x="268" y="8" width="64" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="Bhn-qJ-jae"/>
+                        <constraint firstAttribute="width" constant="64" id="wIq-Z9-sG5"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1N-qo-9mW">
+                    <rect key="frame" x="279" y="80" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="WKn-5I-17D"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="MY7-66-BvF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5Jc-e2-MCy"/>
+                <constraint firstAttribute="bottom" secondItem="MY7-66-BvF" secondAttribute="bottom" id="8Tn-bT-paW"/>
+                <constraint firstAttribute="centerX" secondItem="k1N-qo-9mW" secondAttribute="centerX" id="NMB-9d-xAR"/>
+                <constraint firstItem="MY7-66-BvF" firstAttribute="top" secondItem="BhG-GL-e4d" secondAttribute="bottom" constant="8" id="PZG-EW-N77"/>
+                <constraint firstItem="k1N-qo-9mW" firstAttribute="top" secondItem="BhG-GL-e4d" secondAttribute="bottom" constant="8" id="dh2-Xz-taz"/>
+                <constraint firstAttribute="centerX" secondItem="BhG-GL-e4d" secondAttribute="centerX" id="lDw-ap-P9V"/>
+                <constraint firstItem="MY7-66-BvF" firstAttribute="top" secondItem="k1N-qo-9mW" secondAttribute="bottom" constant="8" id="mNl-S1-kr2"/>
+                <constraint firstItem="BhG-GL-e4d" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="qum-fU-pb3"/>
+                <constraint firstAttribute="trailing" secondItem="MY7-66-BvF" secondAttribute="trailing" id="yZh-3q-qPP"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="PZG-EW-N77"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="323" y="447"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="LightOff" width="1000" height="1000"/>
+        <image name="NArrow P1" width="700" height="700"/>
+    </resources>
+</document>

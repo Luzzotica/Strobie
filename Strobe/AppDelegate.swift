@@ -1,18 +1,18 @@
 //
 //  AppDelegate.swift
-//  Strobe
+//  TicTacToe
 //
-//  Created by Sterling Long on 10/9/14.
-//  Copyright (c) 2014 Sterling Long. All rights reserved.
+//  Created by Training on 12/09/14.
+//  Copyright (c) 2014 Training. All rights reserved.
 //
 
 import UIKit
+import MultipeerConnectivity
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -40,6 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+
 
 
 }

@@ -7,12 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B5F2CD1A19E7846600ECAC73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2CD1919E7846600ECAC73 /* AppDelegate.swift */; };
+		B54B94141A2E832400F791C7 /* NetworkPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B94121A2E832400F791C7 /* NetworkPlayer.swift */; };
+		B54B94151A2E832400F791C7 /* NetworkPlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = B54B94131A2E832400F791C7 /* NetworkPlayer.xib */; };
+		B54B94191A379B3A00F791C7 /* HostGameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B94181A379B3A00F791C7 /* HostGameHandler.swift */; };
+		B553512119F057FA006F089B /* HostNetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B553512019F057FA006F089B /* HostNetworkHandler.swift */; };
+		B553512319F05823006F089B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B553512219F05823006F089B /* AppDelegate.swift */; };
+		B553512519F1AC6A006F089B /* DiscoverInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B553512419F1AC6A006F089B /* DiscoverInfo.swift */; };
+		B55713811A0EF19000751251 /* ClientGameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55713801A0EF19000751251 /* ClientGameHandler.swift */; };
+		B55A00D21A2625C40087C3DC /* PlayGameClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55A00D01A2625C40087C3DC /* PlayGameClient.swift */; };
+		B55A00D31A2625C40087C3DC /* PlayGameHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55A00D11A2625C40087C3DC /* PlayGameHost.swift */; };
+		B5D6EB4B19F5A0D100C81151 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D6EB4A19F5A0D100C81151 /* JoinViewController.swift */; };
+		B5D6EB5219FC210F00C81151 /* HostViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D6EB5019FC210F00C81151 /* HostViewCell.swift */; };
+		B5D6EB5319FC210F00C81151 /* HostViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D6EB5119FC210F00C81151 /* HostViewCell.xib */; };
+		B5D6EB5A1A0326E900C81151 /* GameLobby.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D6EB591A0326E900C81151 /* GameLobby.swift */; };
+		B5D6EB5C1A09AA4300C81151 /* ClientNetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D6EB5B1A09AA4300C81151 /* ClientNetworkHandler.swift */; };
 		B5F2CD1C19E7846600ECAC73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2CD1B19E7846600ECAC73 /* ViewController.swift */; };
-		B5F2CD1F19E7846600ECAC73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F2CD1D19E7846600ECAC73 /* Main.storyboard */; };
 		B5F2CD2119E7846600ECAC73 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F2CD2019E7846600ECAC73 /* Images.xcassets */; };
 		B5F2CD2419E7846600ECAC73 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5F2CD2219E7846600ECAC73 /* LaunchScreen.xib */; };
 		B5F2CD3019E7846600ECAC73 /* StrobeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2CD2F19E7846600ECAC73 /* StrobeTests.swift */; };
+		B5F2CD3A19E7847500ECAC73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F2CD3919E7847500ECAC73 /* Main.storyboard */; };
+		B5F2CD3E19E787FD00ECAC73 /* HostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2CD3D19E787FD00ECAC73 /* HostViewController.swift */; };
+		B5F2CD4019E78E7B00ECAC73 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2CD3F19E78E7B00ECAC73 /* SetupViewController.swift */; };
+		B5F2CD4619E86F8300ECAC73 /* JoinViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2CD4519E86F8300ECAC73 /* JoinViewCellController.swift */; };
+		B5F2CD4819E8879000ECAC73 /* JoinGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5F2CD4719E8879000ECAC73 /* JoinGameCell.xib */; };
+		B5F2CD4A19E9C76000ECAC73 /* LocalGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2CD4919E9C76000ECAC73 /* LocalGameView.swift */; };
+		B5F2CD4E19E9D25C00ECAC73 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F2CD4D19E9D25C00ECAC73 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +45,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B54B94121A2E832400F791C7 /* NetworkPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkPlayer.swift; sourceTree = "<group>"; };
+		B54B94131A2E832400F791C7 /* NetworkPlayer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NetworkPlayer.xib; sourceTree = "<group>"; };
+		B54B94181A379B3A00F791C7 /* HostGameHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostGameHandler.swift; sourceTree = "<group>"; };
+		B553512019F057FA006F089B /* HostNetworkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HostNetworkHandler.swift; path = ../HostNetworkHandler.swift; sourceTree = "<group>"; };
+		B553512219F05823006F089B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B553512419F1AC6A006F089B /* DiscoverInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverInfo.swift; sourceTree = "<group>"; };
+		B55713801A0EF19000751251 /* ClientGameHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientGameHandler.swift; sourceTree = "<group>"; };
+		B55A00D01A2625C40087C3DC /* PlayGameClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayGameClient.swift; sourceTree = "<group>"; };
+		B55A00D11A2625C40087C3DC /* PlayGameHost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayGameHost.swift; sourceTree = "<group>"; };
+		B5D6EB4A19F5A0D100C81151 /* JoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
+		B5D6EB5019FC210F00C81151 /* HostViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostViewCell.swift; sourceTree = "<group>"; };
+		B5D6EB5119FC210F00C81151 /* HostViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HostViewCell.xib; sourceTree = "<group>"; };
+		B5D6EB591A0326E900C81151 /* GameLobby.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLobby.swift; sourceTree = "<group>"; };
+		B5D6EB5B1A09AA4300C81151 /* ClientNetworkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientNetworkHandler.swift; sourceTree = "<group>"; };
 		B5F2CD1419E7846600ECAC73 /* Strobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Strobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F2CD1819E7846600ECAC73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5F2CD1919E7846600ECAC73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5F2CD1B19E7846600ECAC73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B5F2CD1E19E7846600ECAC73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5F2CD2019E7846600ECAC73 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B5F2CD2319E7846600ECAC73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B5F2CD2919E7846600ECAC73 /* StrobeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrobeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F2CD2E19E7846600ECAC73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5F2CD2F19E7846600ECAC73 /* StrobeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrobeTests.swift; sourceTree = "<group>"; };
+		B5F2CD3919E7847500ECAC73 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B5F2CD3D19E787FD00ECAC73 /* HostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostViewController.swift; sourceTree = "<group>"; };
+		B5F2CD3F19E78E7B00ECAC73 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		B5F2CD4519E86F8300ECAC73 /* JoinViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JoinViewCellController.swift; path = ../JoinViewCellController.swift; sourceTree = "<group>"; };
+		B5F2CD4719E8879000ECAC73 /* JoinGameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JoinGameCell.xib; sourceTree = "<group>"; };
+		B5F2CD4919E9C76000ECAC73 /* LocalGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalGameView.swift; sourceTree = "<group>"; };
+		B5F2CD4D19E9D25C00ECAC73 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +94,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5D6EB541A03255200C81151 /* Bluetooth Game */ = {
+			isa = PBXGroup;
+			children = (
+				B55A00D01A2625C40087C3DC /* PlayGameClient.swift */,
+				B55A00D11A2625C40087C3DC /* PlayGameHost.swift */,
+				B5D6EB591A0326E900C81151 /* GameLobby.swift */,
+				B55713801A0EF19000751251 /* ClientGameHandler.swift */,
+				B54B94181A379B3A00F791C7 /* HostGameHandler.swift */,
+				B54B94121A2E832400F791C7 /* NetworkPlayer.swift */,
+				B54B94131A2E832400F791C7 /* NetworkPlayer.xib */,
+			);
+			name = "Bluetooth Game";
+			sourceTree = "<group>";
+		};
 		B5F2CD0B19E7846600ECAC73 = {
 			isa = PBXGroup;
 			children = (
@@ -77,12 +129,16 @@
 		B5F2CD1619E7846600ECAC73 /* Strobe */ = {
 			isa = PBXGroup;
 			children = (
-				B5F2CD1919E7846600ECAC73 /* AppDelegate.swift */,
+				B553512219F05823006F089B /* AppDelegate.swift */,
 				B5F2CD1B19E7846600ECAC73 /* ViewController.swift */,
-				B5F2CD1D19E7846600ECAC73 /* Main.storyboard */,
+				B5F2CD3919E7847500ECAC73 /* Main.storyboard */,
+				B5F2CD5219EB19AE00ECAC73 /* Host Game */,
+				B5F2CD5119EB198B00ECAC73 /* Join Game */,
+				B5D6EB541A03255200C81151 /* Bluetooth Game */,
+				B5F2CD5019EB193700ECAC73 /* Local Game */,
 				B5F2CD2019E7846600ECAC73 /* Images.xcassets */,
-				B5F2CD2219E7846600ECAC73 /* LaunchScreen.xib */,
 				B5F2CD1719E7846600ECAC73 /* Supporting Files */,
+				B5F2CD2219E7846600ECAC73 /* LaunchScreen.xib */,
 			);
 			path = Strobe;
 			sourceTree = "<group>";
@@ -110,6 +166,39 @@
 				B5F2CD2E19E7846600ECAC73 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5F2CD5019EB193700ECAC73 /* Local Game */ = {
+			isa = PBXGroup;
+			children = (
+				B5F2CD4919E9C76000ECAC73 /* LocalGameView.swift */,
+				B5F2CD4D19E9D25C00ECAC73 /* Player.swift */,
+			);
+			name = "Local Game";
+			sourceTree = "<group>";
+		};
+		B5F2CD5119EB198B00ECAC73 /* Join Game */ = {
+			isa = PBXGroup;
+			children = (
+				B5D6EB5B1A09AA4300C81151 /* ClientNetworkHandler.swift */,
+				B5D6EB4A19F5A0D100C81151 /* JoinViewController.swift */,
+				B5F2CD4519E86F8300ECAC73 /* JoinViewCellController.swift */,
+				B553512419F1AC6A006F089B /* DiscoverInfo.swift */,
+				B5F2CD4719E8879000ECAC73 /* JoinGameCell.xib */,
+			);
+			name = "Join Game";
+			sourceTree = "<group>";
+		};
+		B5F2CD5219EB19AE00ECAC73 /* Host Game */ = {
+			isa = PBXGroup;
+			children = (
+				B5F2CD3F19E78E7B00ECAC73 /* SetupViewController.swift */,
+				B553512019F057FA006F089B /* HostNetworkHandler.swift */,
+				B5F2CD3D19E787FD00ECAC73 /* HostViewController.swift */,
+				B5D6EB5019FC210F00C81151 /* HostViewCell.swift */,
+				B5D6EB5119FC210F00C81151 /* HostViewCell.xib */,
+			);
+			name = "Host Game";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +250,7 @@
 				TargetAttributes = {
 					B5F2CD1319E7846600ECAC73 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 2U534LS5Y9;
 					};
 					B5F2CD2819E7846600ECAC73 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -192,9 +282,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5F2CD1F19E7846600ECAC73 /* Main.storyboard in Resources */,
 				B5F2CD2419E7846600ECAC73 /* LaunchScreen.xib in Resources */,
+				B54B94151A2E832400F791C7 /* NetworkPlayer.xib in Resources */,
 				B5F2CD2119E7846600ECAC73 /* Images.xcassets in Resources */,
+				B5F2CD3A19E7847500ECAC73 /* Main.storyboard in Resources */,
+				B5F2CD4819E8879000ECAC73 /* JoinGameCell.xib in Resources */,
+				B5D6EB5319FC210F00C81151 /* HostViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +305,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D6EB5C1A09AA4300C81151 /* ClientNetworkHandler.swift in Sources */,
+				B5F2CD3E19E787FD00ECAC73 /* HostViewController.swift in Sources */,
+				B5F2CD4A19E9C76000ECAC73 /* LocalGameView.swift in Sources */,
+				B5D6EB4B19F5A0D100C81151 /* JoinViewController.swift in Sources */,
+				B54B94191A379B3A00F791C7 /* HostGameHandler.swift in Sources */,
 				B5F2CD1C19E7846600ECAC73 /* ViewController.swift in Sources */,
-				B5F2CD1A19E7846600ECAC73 /* AppDelegate.swift in Sources */,
+				B553512319F05823006F089B /* AppDelegate.swift in Sources */,
+				B55A00D31A2625C40087C3DC /* PlayGameHost.swift in Sources */,
+				B5D6EB5A1A0326E900C81151 /* GameLobby.swift in Sources */,
+				B55713811A0EF19000751251 /* ClientGameHandler.swift in Sources */,
+				B553512119F057FA006F089B /* HostNetworkHandler.swift in Sources */,
+				B5F2CD4019E78E7B00ECAC73 /* SetupViewController.swift in Sources */,
+				B5D6EB5219FC210F00C81151 /* HostViewCell.swift in Sources */,
+				B5F2CD4E19E9D25C00ECAC73 /* Player.swift in Sources */,
+				B553512519F1AC6A006F089B /* DiscoverInfo.swift in Sources */,
+				B55A00D21A2625C40087C3DC /* PlayGameClient.swift in Sources */,
+				B54B94141A2E832400F791C7 /* NetworkPlayer.swift in Sources */,
+				B5F2CD4619E86F8300ECAC73 /* JoinViewCellController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,14 +345,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B5F2CD1D19E7846600ECAC73 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5F2CD1E19E7846600ECAC73 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B5F2CD2219E7846600ECAC73 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -338,9 +439,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Strobe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -348,9 +453,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Strobe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -407,6 +516,7 @@
 				B5F2CD3519E7846600ECAC73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5F2CD3619E7846600ECAC73 /* Build configuration list for PBXNativeTarget "StrobeTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +525,7 @@
 				B5F2CD3819E7846600ECAC73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
